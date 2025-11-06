@@ -13,42 +13,42 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: './src/assets/interior1.png',
+      src: '/src/assets/interior1.png',
       alt: 'Car Interior - Dashboard View',
       title: 'Modern Dashboard & Controls'
     },
     {
-      src: './src/assets/interior2.png',
+      src: '/src/assets/interior2.png',
       alt: 'Car Interior - Seating',
       title: 'Premium Leather Seating'
     },
     {
-      src: './src/assets/interior3.png',
+      src: '/src/assets/interior3.png',
       alt: 'Car Interior - Rear View',
       title: 'Spacious Rear Passenger Area'
     },
     {
-      src: './src/assets/interior4.png',
+      src: '/src/assets/interior4.png',
       alt: 'Car Interior - Features',
       title: 'Luxury Interior Features'
     },
     {
-      src: './src/assets/image3.png',
+      src: '/src/assets/image3.png',
       alt: 'Professional Fleet Vehicle',
       title: 'Our Premium Fleet'
     },
     {
-      src: './src/assets/city.png',
+      src: '/src/assets/city.png',
       alt: 'City Tour Service',
       title: 'Professional City Tours'
     },
     {
-      src: './src/assets/driver.png',
+      src: '/src/assets/driver.png',
       alt: 'Professional Driver',
       title: 'Our Professional Drivers'
     },
     {
-      src: './src/assets/women.png',
+      src: '/src/assets/women.png',
       alt: 'Professional Female Driver',
       title: 'Our Professional Team'
     }
@@ -71,7 +71,7 @@ const Gallery = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full blur opacity-20"></div>
                 <img
-                  src="./src/assets/women.png"
+                  src="/src/assets/women.png"
                   alt="Professional Female Driver"
                   className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover shadow-2xl border-4 border-yellow-500 hover:border-yellow-400 transition-all duration-300"
                 />
@@ -112,7 +112,7 @@ const Gallery = () => {
           <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
             <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl p-4 md:p-6 lg:p-8 shadow-2xl hover:shadow-3xl transition-shadow duration-300">
               <img
-                src="./src/assets/interior1.png"
+                src="/src/assets/interior1.png"
                 alt="Premium Car Interior - Main View"
                 className="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

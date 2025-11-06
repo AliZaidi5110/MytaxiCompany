@@ -34,7 +34,7 @@ const Logo = ({ size = 'large', className = '' }) => {
 
   return (
     <img
-      src="./src/assets/militaryTaxiLogo.jpg"
+      src="/src/assets/militaryTaxiLogo.jpg"
       alt="The Military Taxi Co. Logo"
       className={`${sizeClasses[size]} rounded-xl shadow-lg object-cover border-2 border-white ${className}`}
       onError={handleImageError}

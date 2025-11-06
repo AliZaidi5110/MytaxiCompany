@@ -10,7 +10,7 @@ const Services = () => {
       title: 'Private Hire',
       tagline: 'Reliable, comfortable, and always on time.',
       desc: 'Professional drivers for all your local and long-distance travel needs.',
-      image: './src/assets/driver.png',
+      image: '/src/assets/driver.png',
       features: ['Professional Chauffeurs', 'Luxury Comfort', 'Flexible Scheduling', 'Local & Long Distance']
     },
     {
@@ -18,7 +18,7 @@ const Services = () => {
       title: 'Wedding Car Hire',
       tagline: 'Arrive in style on your big day.',
       desc: 'Beautifully decorated, chauffeur-driven luxury cars for your special moment.',
-      image: './src/assets/wedding.png',
+      image: '/src/assets/wedding.png',
       features: ['Luxury Vehicles', 'Wedding Decoration', 'Professional Chauffeur', 'Photography Support']
     },
     {
@@ -26,7 +26,7 @@ const Services = () => {
       title: 'Airport Transfers',
       tagline: 'Smooth rides to and from all major UK airports.',
       desc: 'Heathrow, Gatwick, Stansted and beyond. Flight monitoring and meet-and-greet service included.',
-      image: './src/assets/airport.png',
+      image: '/src/assets/airport.png',
       features: ['Flight Monitoring', 'Meet & Greet', 'All Major Airports', 'Luggage Assistance']
     },
     {
@@ -34,7 +34,7 @@ const Services = () => {
       title: 'UK Tours',
       tagline: 'Explore iconic landmarks with comfort and class.',
       desc: 'Discover historic sites and attractions with our knowledgeable, friendly drivers.',
-      image: './src/assets/stonehedge.png',
+      image: '/src/assets/stonehedge.png',
       features: ['Historic Landmarks', 'Expert Guides', 'Comfortable Transport', 'Flexible Itinerary']
     },
     {
@@ -42,7 +42,7 @@ const Services = () => {
       title: 'Train Station Transfers',
       tagline: 'Punctual drop-offs and pickups.',
       desc: 'Major UK train stations — no waiting, no stress, just reliable service.',
-      image: './src/assets/trainStation.png',
+      image: '/src/assets/trainStation.png',
       features: ['All Major Stations', 'Schedule Coordination', 'Punctual Service', 'Luggage Support']
     },
     {
@@ -50,7 +50,7 @@ const Services = () => {
       title: 'Military Base Transport',
       tagline: 'Trusted by service members.',
       desc: 'Secure and respectful transfers to and from Bulford, Larkhill, Tidworth, and Perham Down military bases.',
-      image: './src/assets/military.png',
+      image: '/src/assets/military.png',
       features: ['Security Cleared', 'Military Experience', 'Respectful Service', 'Base Access']
     }
   ];
