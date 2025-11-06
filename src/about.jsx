@@ -27,7 +27,7 @@ const About = () => {
           <div className="relative">
             <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl p-8 shadow-2xl">
               <img 
-                src="/src/assets/kiaOptima.png" 
+                src="/images/kiaOptima.png" 
                 alt="KIA Optima - Our Professional Fleet" 
                 className="w-full h-55 object-cover rounded-lg"
               />
