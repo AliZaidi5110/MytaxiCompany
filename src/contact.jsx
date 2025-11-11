@@ -32,8 +32,8 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Email Us</h3>
                 <p className="text-gray-400 mb-2">Send us your booking details or questions</p>
-                <a href="mailto:themillitarytaxico@gmail.com" className="text-yellow-500 text-lg font-semibold hover:text-yellow-400">
-                  themillitarytaxico@gmail.com
+                <a href="mailto:themilitarytaxico@gmail.com" className="text-yellow-500 text-lg font-semibold hover:text-yellow-400">
+                  themilitarytaxico@gmail.com
                 </a>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Contact = () => {
 
           {/* Contact Message */}
           <div className="bg-gray-800 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-6 text-center">Contact The Military Taxi Co.</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center">Contact Military Taxi Company</h3>
             
             <div className="text-center space-y-6">
               <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-6">
@@ -79,7 +79,7 @@ const Contact = () => {
                     📞 Call Now: 07999 997 820
                   </a>
                   <a 
-                    href="mailto:themillitarytaxico@gmail.com" 
+                    href="mailto:themilitarytaxico@gmail.com" 
                     className="block bg-gray-700 text-white py-3 px-6 rounded-lg font-semibold hover:bg-gray-600 transition-colors"
                   >
                     ✉️ Email Us
@@ -111,7 +111,7 @@ const Contact = () => {
 
               <div className="text-center">
                 <p className="text-gray-400 text-sm">
-                  Serving Bulford, Larkhill, Tidworth, Perham Down and surrounding areas
+                  Serving Wiltshire and surrounding areas
                 </p>
               </div>
             </div>

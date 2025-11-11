@@ -8,7 +8,7 @@ const About = () => {
           <div>
             <h2 className="text-4xl font-bold mb-6">Military Precision, Professional Service</h2>
             <p className="text-lg text-gray-600 mb-6">
-              Founded by military veterans now serving the UK, The Military Taxi Co. brings military discipline and reliability to civilian transportation. We pride ourselves on punctuality, safety, and exceptional service across the United Kingdom.
+              Founded by military veterans now serving the UK, Military Taxi Company brings military discipline and reliability to civilian transportation. We pride ourselves on punctuality, safety, and exceptional service across the United Kingdom.
             </p>
             <p className="text-lg text-gray-600 mb-6">
               Our fleet of modern vehicles and professional drivers ensure you reach your destination safely and on time, every time. Experience professional service with military precision and reliability.

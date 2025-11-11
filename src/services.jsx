@@ -49,9 +49,9 @@ const Services = () => {
       icon: Shield,
       title: 'Military Base Transport',
       tagline: 'Trusted by service members.',
-      desc: 'Secure and respectful transfers to and from Bulford, Larkhill, Tidworth, and Perham Down military bases.',
+      desc: 'Secure and respectful transfers throughout Wiltshire.',
       image: '/images/military.png',
-      features: ['Security Cleared', 'Military Experience', 'Respectful Service', 'Base Access']
+      features: ['Security Cleared', 'Military Experience', 'Respectful Service', 'Professional Drivers']
     }
   ];
 
@@ -68,31 +68,19 @@ const Services = () => {
             <span className="text-amber-600 font-semibold"> comfort, class, and reliability</span> on every journey.
           </p>
           
-          {/* Military Bases Section */}
+          {/* Service Area Section */}
           <div className="mt-12 bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8">
             <div className="flex items-center justify-center mb-4">
               <MapPin className="w-6 h-6 text-amber-600 mr-3" />
               <h3 className="text-2xl font-bold text-gray-900">Military Bases We Serve</h3>
             </div>
             <p className="text-lg text-gray-700 mb-4">
-              Specialized transport services to and from these military installations:
+              Specialized transport services throughout:
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-white rounded-lg p-4 shadow-md text-center">
-                <Shield className="w-8 h-8 text-amber-600 mx-auto mb-2" />
-                <span className="font-bold text-gray-900">Bulford</span>
-              </div>
-              <div className="bg-white rounded-lg p-4 shadow-md text-center">
-                <Shield className="w-8 h-8 text-amber-600 mx-auto mb-2" />
-                <span className="font-bold text-gray-900">Larkhill</span>
-              </div>
-              <div className="bg-white rounded-lg p-4 shadow-md text-center">
-                <Shield className="w-8 h-8 text-amber-600 mx-auto mb-2" />
-                <span className="font-bold text-gray-900">Tidworth</span>
-              </div>
-              <div className="bg-white rounded-lg p-4 shadow-md text-center">
-                <Shield className="w-8 h-8 text-amber-600 mx-auto mb-2" />
-                <span className="font-bold text-gray-900">Perham Down</span>
+            <div className="flex justify-center">
+              <div className="bg-white rounded-lg p-6 shadow-md text-center">
+                <MapPin className="w-10 h-10 text-amber-600 mx-auto mb-3" />
+                <span className="font-bold text-gray-900 text-xl">Wiltshire</span>
               </div>
             </div>
           </div>

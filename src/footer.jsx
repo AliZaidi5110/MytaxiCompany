@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-span-1">
             <div className="flex items-center mb-4">
               <Logo size="small" className="mr-3" />
-              <span className="text-xl font-bold">The Military Taxi Co.</span>
+              <span className="text-xl font-bold">Military Taxi Company</span>
             </div>
             <p className="text-gray-400 mb-4">
               Professional taxi services across the UK with military precision and exceptional service.
@@ -72,8 +72,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 text-yellow-500 mr-2" />
-                <a href="mailto:themillitarytaxico@gmail.com" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                  themillitarytaxico@gmail.com
+                <a href="mailto:themilitarytaxico@gmail.com" className="text-gray-400 hover:text-yellow-500 transition-colors">
+                  themilitarytaxico@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
@@ -87,7 +87,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 The Military Taxi Co. All rights reserved.
+            © 2024 Military Taxi Company. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-yellow-500 text-sm transition-colors">Privacy Policy</a>

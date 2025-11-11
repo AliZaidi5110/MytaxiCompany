@@ -6,11 +6,10 @@ import ErrorBoundary from './components/ErrorBoundary';
 function Home() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
   const [formData, setFormData] = useState({
-    pickup: '',
-    dropoff: '',
-    date: '',
-    time: '',
-    passengers: '1'
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
   });
 
   const handleInputChange = (e) => {
@@ -21,7 +20,7 @@ function Home() {
   };
 
   const handleSubmit = () => {
-    alert('Booking request submitted! We will contact you shortly.');
+    alert('Message sent! We will contact you shortly.');
   };
 
   return (
@@ -44,19 +43,16 @@ function Home() {
               </p>
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 mb-4">
                 <h3 className="text-lg font-semibold text-yellow-400 mb-2">Serving Military Bases:</h3>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <span>• Bulford</span>
-                  <span>• Larkhill</span>
-                  <span>• Tidworth</span>
-                  <span>• Perham Down</span>
+                <div className="text-sm">
+                  <span>• Wiltshire</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 text-lg">
                 <a href="tel:07999997820" className="flex items-center text-yellow-400 hover:text-yellow-300 transition-colors">
                   📞 07999997820
                 </a>
-                <a href="mailto:Themillitarytaxico@gmail.com" className="flex items-center text-yellow-400 hover:text-yellow-300 transition-colors">
-                  ✉️ Themillitarytaxico@gmail.com
+                <a href="mailto:themilitarytaxico@gmail.com" className="flex items-center text-yellow-400 hover:text-yellow-300 transition-colors">
+                  ✉️ themilitarytaxico@gmail.com
                 </a>
               </div>
               <div className="flex flex-wrap gap-4">
@@ -72,74 +68,59 @@ function Home() {
               </div>
             </div>
 
-            {/* Booking Form */}
+            {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-2xl p-8 text-gray-900">
-              <h3 className="text-2xl font-bold mb-6 text-center">Book Your Ride</h3>
+              <h3 className="text-2xl font-bold mb-6 text-center">CONTACT US</h3>
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Pickup Location</label>
+                  <label className="block text-sm font-semibold mb-2">NAME</label>
                   <input
                     type="text"
-                    name="pickup"
-                    value={formData.pickup}
+                    name="name"
+                    value={formData.name}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-yellow-500 focus:outline-none transition"
-                    placeholder="Enter pickup address"
+                    placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Drop-off Location</label>
+                  <label className="block text-sm font-semibold mb-2">PHONE NUMBER</label>
                   <input
-                    type="text"
-                    name="dropoff"
-                    value={formData.dropoff}
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-yellow-500 focus:outline-none transition"
-                    placeholder="Enter destination"
+                    placeholder="Your phone number"
                   />
                 </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-semibold mb-2">Date</label>
-                    <input
-                      type="date"
-                      name="date"
-                      value={formData.date}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-yellow-500 focus:outline-none transition"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold mb-2">Time</label>
-                    <input
-                      type="time"
-                      name="time"
-                      value={formData.time}
-                      onChange={handleInputChange}
-                      className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-yellow-500 focus:outline-none transition"
-                    />
-                  </div>
-                </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Passengers</label>
-                  <select
-                    name="passengers"
-                    value={formData.passengers}
+                  <label className="block text-sm font-semibold mb-2">EMAIL</label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-yellow-500 focus:outline-none transition"
-                  >
-                    <option value="1">1 Passenger</option>
-                    <option value="2">2 Passengers</option>
-                    <option value="3">3 Passengers</option>
-                    <option value="4">4 Passengers</option>
-                    <option value="5+">5+ Passengers</option>
-                  </select>
+                    placeholder="Your email"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold mb-2">MESSAGE</label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    rows="4"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-yellow-500 focus:outline-none transition resize-none"
+                    placeholder="Your message"
+                  />
                 </div>
                 <button
                   onClick={handleSubmit}
-                  className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-4 rounded-lg font-bold hover:from-yellow-600 hover:to-yellow-700 transition transform hover:scale-105 shadow-lg"
+                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-lg font-bold hover:from-orange-600 hover:to-orange-700 transition transform hover:scale-105 shadow-lg"
                 >
-                  Confirm Booking
+                  SEND
                 </button>
               </div>
             </div>

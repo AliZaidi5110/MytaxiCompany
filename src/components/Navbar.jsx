@@ -77,7 +77,7 @@ const Navbar = () => {
                             </div>
                             <div className="flex flex-col min-w-0">
                                 <span className="text-sm sm:text-base md:text-xl lg:text-2xl font-black text-white leading-tight tracking-tight truncate">
-                                    The Military Taxi Co.
+                                    Military Taxi Company
                                 </span>
                             </div>
                         </div>
