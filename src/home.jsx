@@ -44,7 +44,7 @@ function Home() {
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-4 mb-4">
                 <h3 className="text-lg font-semibold text-yellow-400 mb-2">Serving Military Bases:</h3>
                 <div className="text-sm">
-                  <span>• Wiltshire</span>
+                  <span>• Wiltshire Military Bases</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 text-lg">

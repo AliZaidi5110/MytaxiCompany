@@ -111,7 +111,7 @@ const Contact = () => {
 
               <div className="text-center">
                 <p className="text-gray-400 text-sm">
-                  Serving Wiltshire and surrounding areas
+                  Serving Wiltshire Military Bases and surrounding areas
                 </p>
               </div>
             </div>

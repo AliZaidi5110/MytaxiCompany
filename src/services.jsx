@@ -80,7 +80,7 @@ const Services = () => {
             <div className="flex justify-center">
               <div className="bg-white rounded-lg p-6 shadow-md text-center">
                 <MapPin className="w-10 h-10 text-amber-600 mx-auto mb-3" />
-                <span className="font-bold text-gray-900 text-xl">Wiltshire</span>
+                <span className="font-bold text-gray-900 text-xl">Wiltshire Military Bases</span>
               </div>
             </div>
           </div>
