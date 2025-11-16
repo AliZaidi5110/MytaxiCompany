@@ -4,23 +4,23 @@ const Features = () => {
   const features = [
     { 
       icon: Clock, 
-      title: '24/7 Service', 
-      desc: 'Available round the clock for all your transportation needs' 
+      title: '24/7 Availability', 
+      desc: 'Round-the-clock service for all your transportation needs, any time of day or night' 
     },
     { 
       icon: Shield, 
-      title: 'Safe & Secure', 
-      desc: 'Military-grade safety standards and fully insured vehicles' 
+      title: 'Licensed & Insured', 
+      desc: 'Fully licensed drivers with comprehensive insurance coverage for your peace of mind' 
     },
     { 
       icon: Star, 
-      title: 'Top Rated', 
-      desc: '5-star customer reviews and excellent service record' 
+      title: '5-Star Rated', 
+      desc: 'Consistently excellent reviews from satisfied customers across the UK' 
     },
     { 
       icon: Car, 
-      title: 'Modern Fleet', 
-      desc: 'Well-maintained, comfortable vehicles with latest amenities' 
+      title: 'Premium Fleet', 
+      desc: 'Modern, well-maintained vehicles with comfort features and professional presentation' 
     }
   ];
 

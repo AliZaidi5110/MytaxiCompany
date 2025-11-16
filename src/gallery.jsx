@@ -1,6 +1,14 @@
 import { useState } from 'react';
 import { Car, Star, Users, Fuel, Settings } from 'lucide-react';
 import SimpleBookingModal from './components/SimpleBookingModal';
+import interior1 from './assets/interior1.png';
+import interior2 from './assets/interior2.png';
+import interior3 from './assets/interior3.png';
+import interior4 from './assets/interior4.png';
+import proPng from './assets/pro.png';
+import cityPng from './assets/city.png';
+import driverPng from './assets/driver.png';
+import womenPng from './assets/women.png';
 
 const Gallery = () => {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
@@ -13,42 +21,42 @@ const Gallery = () => {
 
   const galleryImages = [
     {
-      src: '/images/interior1.png',
+      src: interior1,
       alt: 'Car Interior - Dashboard View',
       title: 'Modern Dashboard & Controls'
     },
     {
-      src: '/images/interior2.png',
+      src: interior2,
       alt: 'Car Interior - Seating',
       title: 'Premium Leather Seating'
     },
     {
-      src: '/images/interior3.png',
+      src: interior3,
       alt: 'Car Interior - Rear View',
       title: 'Spacious Rear Passenger Area'
     },
     {
-      src: '/images/interior4.png',
+      src: interior4,
       alt: 'Car Interior - Features',
       title: 'Luxury Interior Features'
     },
     {
-      src: '/images/image3.png',
+      src: proPng,
       alt: 'Professional Fleet Vehicle',
       title: 'Our Premium Fleet'
     },
     {
-      src: '/images/city.png',
+      src: cityPng,
       alt: 'City Tour Service',
       title: 'Professional City Tours'
     },
     {
-      src: '/images/driver.png',
+      src: driverPng,
       alt: 'Professional Driver',
       title: 'Our Professional Drivers'
     },
     {
-      src: '/images/women.png',
+      src: womenPng,
       alt: 'Professional Female Driver',
       title: 'Our Professional Team'
     }
@@ -71,7 +79,7 @@ const Gallery = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full blur opacity-20"></div>
                 <img
-                  src="/images/women.png"
+                  src={womenPng}
                   alt="Professional Female Driver"
                   className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover shadow-2xl border-4 border-yellow-500 hover:border-yellow-400 transition-all duration-300"
                 />
@@ -112,7 +120,7 @@ const Gallery = () => {
           <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
             <div className="bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl p-4 md:p-6 lg:p-8 shadow-2xl hover:shadow-3xl transition-shadow duration-300">
               <img
-                src="/images/interior1.png"
+                src={interior1}
                 alt="Premium Car Interior - Main View"
                 className="w-full h-64 md:h-80 lg:h-96 object-cover rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
               />

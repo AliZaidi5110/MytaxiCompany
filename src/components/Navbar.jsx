@@ -15,6 +15,23 @@ const Navbar = () => {
         { name: 'Contact', href: '#contact' },
     ];
 
+    const handleNavClick = (e, href) => {
+        e.preventDefault();
+        const targetId = href.replace('#', '');
+        const element = document.getElementById(targetId);
+        if (element) {
+            const navbarHeight = 120; // Approximate navbar height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+        setIsOpen(false);
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
@@ -77,7 +94,7 @@ const Navbar = () => {
                             </div>
                             <div className="flex flex-col min-w-0">
                                 <span className="text-sm sm:text-base md:text-xl lg:text-2xl font-black text-white leading-tight tracking-tight truncate">
-                                    Military Taxi Company
+                                   The Military Taxi Company
                                 </span>
                             </div>
                         </div>
@@ -90,7 +107,8 @@ const Navbar = () => {
                                 <a
                                     key={item.name}
                                     href={item.href}
-                                    className="text-white hover:text-yellow-300 px-3 lg:px-4 py-2 lg:py-3 rounded-xl text-sm lg:text-base font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-700 relative group border border-transparent hover:border-yellow-400 hover:shadow-md"
+                                    onClick={(e) => handleNavClick(e, item.href)}
+                                    className="text-white hover:text-yellow-300 px-3 lg:px-4 py-2 lg:py-3 rounded-xl text-sm lg:text-base font-bold transition-all duration-300 hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-700 relative group border border-transparent hover:border-yellow-400 hover:shadow-md cursor-pointer"
                                 >
                                     {item.name}
                                     <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-gradient-to-r from-yellow-500 to-yellow-600 transition-all duration-300 group-hover:w-8 lg:group-hover:w-10 group-hover:left-1/2 group-hover:-translate-x-1/2 rounded-full"></span>
@@ -144,13 +162,13 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        
+
                         {navItems.map((item) => (
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="text-white hover:text-yellow-300 block px-4 sm:px-6 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-700 transition-all duration-300 border border-transparent hover:border-yellow-400 hover:shadow-md"
-                                onClick={() => setIsOpen(false)}
+                                onClick={(e) => handleNavClick(e, item.href)}
+                                className="text-white hover:text-yellow-300 block px-4 sm:px-6 py-3 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-700 transition-all duration-300 border border-transparent hover:border-yellow-400 hover:shadow-md cursor-pointer"
                             >
                                 {item.name}
                             </a>
